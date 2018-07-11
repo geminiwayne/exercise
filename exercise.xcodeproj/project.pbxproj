@@ -14,7 +14,6 @@
 		E71EE2D520F591A4007682AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71EE2D320F591A4007682AA /* LaunchScreen.storyboard */; };
 		E71EE2E020F591A4007682AA /* exerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71EE2DF20F591A4007682AA /* exerciseTests.swift */; };
 		E71EE2EB20F591A4007682AA /* exerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71EE2EA20F591A4007682AA /* exerciseUITests.swift */; };
-		E71EE2FD20F593AC007682AA /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71EE2FC20F593AC007682AA /* CollectionViewController.swift */; };
 		E71EE2FF20F593CD007682AA /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71EE2FE20F593CD007682AA /* DataModel.swift */; };
 		E71EE30120F594FE007682AA /* APIconnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71EE30020F594FE007682AA /* APIconnection.swift */; };
 		E71EE30320F59BBC007682AA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71EE30220F59BBC007682AA /* CollectionViewCell.swift */; };
@@ -37,6 +36,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E71EE32C20F5DBB0007682AA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E71EE2C720F591A3007682AA /* exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E71EE2CA20F591A3007682AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,10 +63,10 @@
 		E71EE2E620F591A4007682AA /* exerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E71EE2EA20F591A4007682AA /* exerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exerciseUITests.swift; sourceTree = "<group>"; };
 		E71EE2EC20F591A4007682AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E71EE2FC20F593AC007682AA /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		E71EE2FE20F593CD007682AA /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		E71EE30020F594FE007682AA /* APIconnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIconnection.swift; sourceTree = "<group>"; };
 		E71EE30220F59BBC007682AA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		E71EE30520F5D580007682AA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +101,7 @@
 				E71EE2DE20F591A4007682AA /* exerciseTests */,
 				E71EE2E920F591A4007682AA /* exerciseUITests */,
 				E71EE2C820F591A3007682AA /* Products */,
+				E71EE30420F5D580007682AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,7 +124,6 @@
 				E71EE2D120F591A4007682AA /* Assets.xcassets */,
 				E71EE2D320F591A4007682AA /* LaunchScreen.storyboard */,
 				E71EE2D620F591A4007682AA /* Info.plist */,
-				E71EE2FC20F593AC007682AA /* CollectionViewController.swift */,
 				E71EE2FE20F593CD007682AA /* DataModel.swift */,
 				E71EE30020F594FE007682AA /* APIconnection.swift */,
 				E71EE30220F59BBC007682AA /* CollectionViewCell.swift */,
@@ -137,6 +149,14 @@
 			path = exerciseUITests;
 			sourceTree = "<group>";
 		};
+		E71EE30420F5D580007682AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E71EE30520F5D580007682AA /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +167,7 @@
 				E71EE2C320F591A3007682AA /* Sources */,
 				E71EE2C420F591A3007682AA /* Frameworks */,
 				E71EE2C520F591A3007682AA /* Resources */,
+				E71EE32C20F5DBB0007682AA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,7 +289,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E71EE2FD20F593AC007682AA /* CollectionViewController.swift in Sources */,
 				E71EE30120F594FE007682AA /* APIconnection.swift in Sources */,
 				E71EE30320F59BBC007682AA /* CollectionViewCell.swift in Sources */,
 				E71EE2FF20F593CD007682AA /* DataModel.swift in Sources */,
@@ -445,8 +465,11 @@
 		E71EE2F020F591A4007682AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7M23F5XJNT;
 				INFOPLIST_FILE = exercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +477,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Dong-Wang.exercise";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,8 +486,11 @@
 		E71EE2F120F591A4007682AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7M23F5XJNT;
 				INFOPLIST_FILE = exercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -471,6 +498,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Dong-Wang.exercise";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

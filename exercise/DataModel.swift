@@ -12,8 +12,8 @@ import Foundation
 class DataModel{
     var title: String
     var description: String
-    var imageURL: URL
-    init(title:String,description: String,imageURL:URL) {
+    var imageURL: String
+    init(title:String,description: String,imageURL:String) {
         self.title = title
         self.description = description
         self.imageURL = imageURL
