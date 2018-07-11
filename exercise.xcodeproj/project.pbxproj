@@ -14,6 +14,10 @@
 		E71EE2D520F591A4007682AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71EE2D320F591A4007682AA /* LaunchScreen.storyboard */; };
 		E71EE2E020F591A4007682AA /* exerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71EE2DF20F591A4007682AA /* exerciseTests.swift */; };
 		E71EE2EB20F591A4007682AA /* exerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71EE2EA20F591A4007682AA /* exerciseUITests.swift */; };
+		E71EE2FD20F593AC007682AA /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71EE2FC20F593AC007682AA /* CollectionViewController.swift */; };
+		E71EE2FF20F593CD007682AA /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71EE2FE20F593CD007682AA /* DataModel.swift */; };
+		E71EE30120F594FE007682AA /* APIconnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71EE30020F594FE007682AA /* APIconnection.swift */; };
+		E71EE30320F59BBC007682AA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71EE30220F59BBC007682AA /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		E71EE2E620F591A4007682AA /* exerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E71EE2EA20F591A4007682AA /* exerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exerciseUITests.swift; sourceTree = "<group>"; };
 		E71EE2EC20F591A4007682AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E71EE2FC20F593AC007682AA /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		E71EE2FE20F593CD007682AA /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		E71EE30020F594FE007682AA /* APIconnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIconnection.swift; sourceTree = "<group>"; };
+		E71EE30220F59BBC007682AA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				E71EE2D120F591A4007682AA /* Assets.xcassets */,
 				E71EE2D320F591A4007682AA /* LaunchScreen.storyboard */,
 				E71EE2D620F591A4007682AA /* Info.plist */,
+				E71EE2FC20F593AC007682AA /* CollectionViewController.swift */,
+				E71EE2FE20F593CD007682AA /* DataModel.swift */,
+				E71EE30020F594FE007682AA /* APIconnection.swift */,
+				E71EE30220F59BBC007682AA /* CollectionViewCell.swift */,
 			);
 			path = exercise;
 			sourceTree = "<group>";
@@ -256,6 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71EE2FD20F593AC007682AA /* CollectionViewController.swift in Sources */,
+				E71EE30120F594FE007682AA /* APIconnection.swift in Sources */,
+				E71EE30320F59BBC007682AA /* CollectionViewCell.swift in Sources */,
+				E71EE2FF20F593CD007682AA /* DataModel.swift in Sources */,
 				E71EE2CD20F591A3007682AA /* ViewController.swift in Sources */,
 				E71EE2CB20F591A3007682AA /* AppDelegate.swift in Sources */,
 			);
