@@ -7,15 +7,16 @@
 //
 
 import Foundation
+import UIKit
 
 // json data model
 class DataModel{
     var title: String
     var description: String
-    var imageURL: String
-    init(title:String,description: String,imageURL:String) {
+    var image:String
+    init(title:String,description: String,image:String) {
         self.title = title
         self.description = description
-        self.imageURL = imageURL
+        self.image = image
     }
 }

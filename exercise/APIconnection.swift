@@ -7,15 +7,15 @@
 //
 
 import Foundation
+import UIKit
 
 // to connect API and process the json data
 class APIconnection{
-    let BaseURL = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
     var catagory: String!
     var ParsedData = [DataModel]()
     // get connect with API(json)
-    func GetConnect(){
-        guard let URLreq = URL(string: self.BaseURL) else {
+    func GetConnect(UrlStr:String){
+        guard let URLreq = URL(string: UrlStr) else {
             print("Error: cannot create URL")
             return
         }
@@ -31,7 +31,7 @@ class APIconnection{
                 print("Error: Did not receive data")
                 return
             }
-            // parse json 
+            // parse json data
             if let value = String(data: responseData, encoding: String.Encoding.ascii) {
                if let json = value.data(using: String.Encoding.utf8) {
                 let JsonDic = try? JSONSerialization.jsonObject(with: json, options: [])
@@ -42,13 +42,13 @@ class APIconnection{
                             let subTitle = self.Filter(tempVal: i["title"])
                             let description = self.Filter(tempVal: i["description"])
                             let imageHref = self.Filter(tempVal: i["imageHref"])
-                            let tempData = DataModel(title: subTitle, description: description, imageURL: imageHref)
+                            let tempData = DataModel(title: subTitle, description: description, image: imageHref)
                             self.ParsedData.append(tempData)
-                        }
-                        }
+                    }
                 }
+              }
             }
-            }
+        }
             semaphore.signal()
         }
         task.resume()
