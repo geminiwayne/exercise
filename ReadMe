@@ -1,0 +1,6 @@
+Dong Wang
+
+This is a simple ios app to show image by collectionview with UX design.
+1. different layout for portrait and landscape
+2. background loading without any UI block
+3. auto-resize

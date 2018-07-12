@@ -10,12 +10,13 @@ import XCTest
 @testable import exercise
 
 class exerciseTests: XCTestCase {
-    var vc: ViewController!
+    var vc: CollectionViewController!
     
     override func setUp() {
         super.setUp()
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        vc = storyboard.instantiateInitialViewController() as! ViewController
+        let nav = storyboard.instantiateInitialViewController() as! UINavigationController
+        vc = nav.topViewController as! CollectionViewController
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     

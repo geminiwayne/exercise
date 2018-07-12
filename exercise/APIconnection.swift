@@ -20,7 +20,6 @@ class APIconnection{
             return
         }
         let session = URLSession.shared
-        let semaphore = DispatchSemaphore(value: 0)
         let task = session.dataTask(with: URLreq) {
             (data, response, error) in
             guard error == nil else {
@@ -41,7 +40,7 @@ class APIconnection{
                         for i in arrRows{
                             let subTitle = self.Filter(tempVal: i["title"])
                             let description = self.Filter(tempVal: i["description"])
-                            let imageHref = self.Filter(tempVal: i["imageHref"])
+                            var imageHref = self.Filter(tempVal: i["imageHref"])
                             let tempData = DataModel(title: subTitle, description: description, image: imageHref)
                             self.ParsedData.append(tempData)
                     }
@@ -49,10 +48,8 @@ class APIconnection{
               }
             }
         }
-            semaphore.signal()
         }
         task.resume()
-        _ = semaphore.wait(timeout: .distantFuture)
     }
     
     // this function to filter the null value in json file
