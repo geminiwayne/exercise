@@ -25,9 +25,10 @@ class exerciseTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testAPI() {
         let arrayLength = 14
         vc.apiconnection.GetConnect(UrlStr: "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json")
+        print(vc.apiconnection.ParsedData.count)
         XCTAssert(vc.apiconnection.ParsedData.count == arrayLength)
     }
     
