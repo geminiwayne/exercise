@@ -19,9 +19,7 @@ class exerciseUITests: XCTestCase {
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        app = XCUIApplication()
-        app.launchArguments += ["-NSDoubleLocalizedStrings", "YES"]
-        app.launch()
+        XCUIApplication().launch()
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
@@ -29,10 +27,13 @@ class exerciseUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
     func testExample() {
-       XCTAssert(app.textViews["Text"].exists)
-       XCTAssert(app.images.count>13)
+        
+        let app = XCUIApplication()
+        app.otherElements.containing(.navigationBar, identifier:"exercise.CollectionView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .collectionView).element.swipeDown()
+        XCUIDevice.shared.orientation = .portrait
+        
+                
     }
     
 }
